@@ -19,7 +19,6 @@ function textformatter_update_1100() {
       foreach ($bundles as $bundle => $fields) {
         if (!empty($fields)) {
           foreach ($fields as $field_name => $field_instance) {
-                  $pause = 1;
             foreach ($changes as $change) {
               if (!empty($field_instance['settings']['textformatter_contrib'][$change])) {
                 $field_instance['settings']['textformatter_' . $change] = $field_instance['settings']['textformatter_contrib'][$change];
